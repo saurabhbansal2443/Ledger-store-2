@@ -15,6 +15,11 @@ export const useLedgerStore = create((set) => ({
       ],
     }));
   },
+  deleteTransactions: (id) => {
+    set((state) => ({
+      transactions: state.transactions.filter((data) => data.id !== id),
+    }));
+  },
 }));
 
 // Transactions = [] ->
