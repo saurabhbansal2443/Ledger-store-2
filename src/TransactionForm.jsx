@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useLedgerStore } from "./Store";
-import { PlusCircle, Wallet, Tag, IndianRupee } from "lucide-react";
+import { PlusCircle, Wallet, Tag } from "lucide-react";
 
 const TransactionForm = () => {
   const addTransactions = useLedgerStore((state) => state.addTransactions);
@@ -56,7 +56,7 @@ const TransactionForm = () => {
         {/* Amount Input */}
         <div className="space-y-2">
           <label className="text-sm font-semibold text-slate-600 flex items-center gap-2">
-            <IndianRupee className="w-4 h-4" /> Amount
+            $ Amount
           </label>
           <input
             className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:ring-2 focus:ring-slate-900 focus:border-transparent outline-none transition-all"
