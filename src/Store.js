@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { v6 as uuidv6 } from "uuid";
 
-export const LedgerStore = create((set) => ({
+export const useLedgerStore = create((set) => ({
   transactions: [],
   addTransactions: (transaction) => {
     set((state) => ({
